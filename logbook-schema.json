@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Logbook schema for the Arctic Pastfinder project.",
+  "type": "object",
+  "required": [
+    "title",
+    "starts_at",
+    "ends_at",
+    "url"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Logbook title"
+    },
+    "description": {
+      "type": "string",
+      "description": "Logbook description"
+    },
+    "starts_at": {
+      "type": "date",
+      "description": "Starting date of the logbook, usually the date of the first page in the logbook",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "ends_at": {
+      "type": "date",
+      "description": "Ending date of the logbook, usually the date of the last page in the logbook",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "page_count": {
+      "type": "integer"
+    },
+    "url": {
+      "type": "string",
+      "description": "URI Identifier url for resource instance"
+    }
+  }
+}

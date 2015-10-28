@@ -1,0 +1,17 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    json-schema-generator (0.0.9)
+      jsonpath
+    jsonpath (0.5.7)
+      multi_json
+    multi_json (1.11.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  json-schema-generator
+
+BUNDLED WITH
+   1.10.6
